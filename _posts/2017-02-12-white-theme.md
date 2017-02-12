@@ -1,7 +1,7 @@
 ---
-title: White Theme
+title: php basic
 layout: post
-permalink: /php/
+permalink: /white/
 theme: white
 
 slides:
