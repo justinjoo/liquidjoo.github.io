@@ -1,31 +1,49 @@
-title: Joo Blog
-description: 옐로트래블랩스 신입 개발자
+# Site settings
+title: Lorem Ipsum - Web Developer
+description: "A blog about lorem ipsum ..."
+baseurl: "" # for test: remove string '/space-jekyll-templa' to ''
+url: "https://liquidjoo.github.io" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.githu.io'
+# User settings
+username: lorem ipsum
+user_title: Lorem Ipsum - FrontEnd
+email: lorem.lorem@ipsum.com
+twitter_username: loremipsum
+github_username:  loremipsum
+gplus_username:  loremipsum
+disqus_username: loremipsum
 
-
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://liquidjoo.github.io" # the base hostname & protocol for your site
+# Build settings
+markdown: kramdown
+highlighter: rouge
 permalink: /:title/
 
 
+# html minify
 compress_html:
-  clippings: [html,div, p, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, style, li, ul, ol, time, main, script, title]
-  comments: ["<!-- ", " -->"]
-  endings: [all]
-  ignore:
-    envs: [local]
-  blanklines: false
+  clippings: all
+  comments: all
+  endings: []
   profile: false
-  startings: []
-  
-  
-analytics: UA-83979019-1
 
-color-1: '#e74c3c'
-color-2: '##1abc9c'
-color-3: '##1abc9c'
-color-4: '##1abc9c'
-color-5: '##1abc9c'
-color-6: '##1abc9c'
-color-7: '##1abc9c'
-color-8: '##1abc9c'
-
+# Links to include in menu navigation
+links:
+  - title: home
+    url: /
+  - title: my posts
+    url: /posts
+  - title: series
+    url: /series
+  - title: tags
+    url: /tags
+  - title: about me
+    url: /about
+# projects in header index
+projects:
+  - name: asciilang
+    url: https://github.com/victorvoid/asciilang
+  - name: vim-frontend
+    url: https://github.com/victorvoid/vim-frontend
+  - name: generator-capybara
+    url: https://github.com/victorvoid/generator-capybara
+# exclude my node related stuff
+exclude: ['package.json', 'src', 'node_modules']

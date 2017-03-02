@@ -1,59 +1,73 @@
-# Webjeda Slides
-Webjeda slides is built using revealjs. The idea is to keep all the slideshows in one place as posts. All your presentations can be accessed from one place!
+# Space Jekyll
 
+A simple and elegant Jekyll theme based on Spacemacs. The theme works well on mobile devices as well.
 
-# Features
+See a live demo [here](https://victorvoid.github.io/space-jekyll-template/).
 
-## All the presentations at one place!
-This theme is useful for those who give speeches at conferences using slides, students and teachers. Manage all your presentations at one place!
+![](https://github.com/victorvoid/space-jekyll-template/blob/master/screenshot.png?raw=true)
 
-## Light-weight
-The theme has very less code and uses minified assets for fast loading.
+# Site/User Settings
 
-# Installation
-Fork the ``master`` branch and delete ``gh-pages`` branch in it. This is important because ``gh-pages`` branch is used here only to host the blog. You should be using the master branch as the source and create a fresh ``gh-pages`` branch.
+customize your site in ``_config.yml``
 
-## How to delete old **gh-pages** branch?
-After forking the repository, click on **branches**.
+```ruby
 
+# Site settings
+description: A blog about lorem ipsum
+baseurl: "" # the subpath
+url: "" # the base hostname &/|| protocol for your site 
 
-![delete gh-pages branch](/images/delete-github-branch.png)
-
-Delete ``gh-pages`` branch.
-![delete gh-pages branch](/images/delete-github-branch-2.png)
-
-You have to create a new ``gh-pages`` branch using the master branch. Go back to the forked repository and create ``gh-pages`` branch.
-
-![create gh-pages branch](/images/create-gh-pages-branch.JPG)
-
-Now, go to settings and check the **Github Pages** section. You should see a URL where the blog is hosted.
-
-This process will host the theme as a **Project Page**. You can also download the files for local development. 
-
-Default theme will look like this
-
-![webjeda slides jekyll theme](/images/slide-jekyll-theme.png)
-
-This theme is responsive.
-
-![webjeda slide responsive jekyll theme](/images/slide-responsive-jekyll-theme.png)
-
-
-# Customization
-
-## Theme
-Posts can have any theme among the ones listed below. Different posts can have different themes. Use these values in the front matter to change theme - **black, white, league, sky, beige, simple, serif, blood(default), night, moon, solarized**.
+# User settings
+username: Lorem Ipsum
+user_description: Lorem Developer
+user_title: Lorem Ipsum
+email: lorem@ipsum.com
+twitter_username: loremipsum
+github_username:  loremipsum
+gplus_username:  loremipsum
+disqus_username: loremipsum
 
 ```
+
+## How to create a post ? 
+
+_posts create a file .md with structure:
+
+```md
 ---
-title: Presentation 1
 layout: post
-theme: white 
+title: "Lorem ipsum speak.."
+date: 2016-09-13 01:00:00
+image: '/assets/img/post-image.png'
+description: 'about tech'
+tags:
+- lorem
+- tech 
+categories:
+- Lorem ipsum
+twitter_text: 'How to speak with Lorem'
 ---
 ```
 
-# Development
-Make changes to the **master** branch and create a pull request. Do not use **gh-pages** branch as it is used to host the theme.
+## License
+The MIT License (MIT)
 
-# License
-Read [LICENSE](https://raw.githubusercontent.com/sharu725/slides/master/LICENSE.md)
+Copyright (c) 2016 Victor Igor
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
